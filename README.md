@@ -4,7 +4,7 @@ A better way of having a second keyboard for macros, instead of having each key 
 
 1. download luamacros https://github.com/me2d13/luamacros
 2. open SECOND_KEYBOARD_script_for_LUA_MACROS.lua in Lua https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS 
-3. press the play key, press any key on the second keyboard, it is now your macro keyboard
+3. press the "play" button, press any key on the second keyboard, it is now your macro keyboard
 4. in the console look for your macro keyboard and find its ID and save it, it should be between two (&) symbols this is how it looks like:
 
 ```
