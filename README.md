@@ -18,7 +18,7 @@ Type = keyboard
 
 After you press play, everything you press on your second keyboard will be interpreted by your system as *(whatever you pressed)+F13]* (your keyboard most likely doesn't have a physycal F13 key, but it can still interpret it)
 
-the rest of the work uses Autohotkey you can use ScriptForLua.AHK as a sample
+The rest of the work uses Autohotkey you can use Lua.AHK as a sample.
 
 for example if you want to mute your system using M in the second keyboard:
 ```
