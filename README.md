@@ -27,3 +27,6 @@ Send {Volume_Mute}
 return
 ```
 
+
+Keys.xlsx is a reference sheet with the codes for most of the keys.
+
