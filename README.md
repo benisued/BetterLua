@@ -29,4 +29,4 @@ return
 
 
 Keys.xlsx is a reference sheet with the codes for most of the keys.
-
+and here is a more complete one, https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
