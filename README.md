@@ -1,11 +1,12 @@
 # BetterLua
 A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, lua sends [key]+F13 which you can capture with AutoHotKey and do whatever you want
+the idea comes from Taran https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS
 
 
 1. download luamacros https://github.com/me2d13/luamacros
-2. open SECOND_KEYBOARD_script_for_LUA_MACROS.lua in Lua https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS 
-3. press the "play" button, press any key on the second keyboard, it is now your macro keyboard
-4. in the console look for your macro keyboard and find its ID and save it, it should be between two (&) symbols this is how it looks like:
+2. open 2ndKeyb2ndVer.lua in Lua 
+3. press the "play" button,after the prompt, press any key on the second keyboard, it is now your macro keyboard
+4. in the console look for your macro keyboard in the list of devices, find its ID and store it, it should be between two (&) symbols this is how it looks like:
 
 ```
 Type = keyboard
@@ -30,3 +31,17 @@ return
 
 Keys.xlsx is a reference sheet with the codes for most of the keys.
 and here is a more complete one, https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+
+If there is a key that doesn't work in the second keyboard this is how you fix it:
+1. find the key code here https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+2. Add this to 2ndKeyb2ndVer.lua, changing XX for the number you have (it has to be added under the other similar snippets)
+
+```
+ if (button == XX) then lmc_send_input(124, 0, 0)   --presses F13
+                         lmc_send_input(XX, 0, 0)   --presses ` (tilde)
+                         lmc_send_input(192, 0, 2)   --release ` tilde
+                         lmc_send_input(XX, 0, 2)   --release F13 
+
+```
+
+
