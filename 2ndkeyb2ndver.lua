@@ -1,4 +1,4 @@
-clear() --clear the console from last run
+clear() --clear the console from last run.
 
 --You need to get the identifier code for the keyboard with name "MACROS"
 --This appears about halfway through the SystemID (between two &) and looks like 1BB382AF or some other alphanumeric combo.
