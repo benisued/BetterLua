@@ -1,6 +1,6 @@
 # BetterLua
-A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, lua sends [key]+F13 which you can capture with AutoHotKey and do whatever you want
-the idea comes from Taran https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS
+A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, in this script, lua sends [key]+F13 which you can capture with AutoHotKey and do whatever you want
+using a 2nd keyboard is Taran's idea, but our implementations differs https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROSx
 
 
 1. download luamacros https://github.com/me2d13/luamacros
@@ -28,6 +28,19 @@ Send {Volume_Mute}
 return
 ```
 
+in order to make this run at startup:
+1.  create a .bat file like this, changing it for your path
+
+```
+echo off
+start \the_path_to_the_pragram\LuaMacros.exe -r \the_path_to_the_script\meu.lua
+```
+alternatively you can just download it from the repo and change it the same way
+
+2.Create a shortcut of the .bat file (right click>send to desktop)
+3. Press Win+R and type shell:startup
+4. move the shortcut to the filder that opened
+that's it
 
 Keys.xlsx is a reference sheet with the codes for most of the keys.
 and here is a more complete one, https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
@@ -38,10 +51,10 @@ If there is a key that doesn't work in the second keyboard this is how you fix i
 
 ```
  if (button == XX) then lmc_send_input(124, 0, 0)   --presses F13
-                         lmc_send_input(XX, 0, 0)   --presses ` (tilde)
-                         lmc_send_input(192, 0, 2)   --release ` tilde
-                         lmc_send_input(XX, 0, 2)   --release F13 
+                         lmc_send_input(XX, 0, 0)   --presses your key
+                         lmc_send_input(192, 0, 2)   --release your key
+                         lmc_send_input(XX, 0, 2)   --release F13
 
 ```
 
-
+to make lua 
