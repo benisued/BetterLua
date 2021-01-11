@@ -1,7 +1,9 @@
 # BetterLua
+
 A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, in this script, lua sends [key]+F13 which you can capture with AutoHotKey and do whatever you want
 using a 2nd keyboard is Taran's idea, but our implementations differs https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROSx
 
+## Instalation
 
 1. download luamacros https://github.com/me2d13/luamacros
 2. open 2ndKeyb2ndVer.lua in Lua 
@@ -28,12 +30,13 @@ Send {Volume_Mute}
 return
 ```
 
-in order to make this run at startup:
+## Running on startup
+
 1.  create a .bat file like this, changing it for your path
 
 ```
 echo off
-start \the_path_to_the_pragram\LuaMacros.exe -r \the_path_to_the_script\meu.lua
+start \<PATH_TO_PROGRAM>\LuaMacros.exe -r \<PATH_TO_SCRIPT>\meu.lua
 ```
 alternatively you can just download it from the repo and change it the same way
 
