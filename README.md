@@ -57,4 +57,3 @@ If there is a key that doesn't work in the second keyboard this is how you fix i
 
 ```
 
-to make lua 
