@@ -13,6 +13,12 @@ if keyboardIdentifier == '0000AAA' then
 else lmc_device_set_name('MACROS', keyboardIdentifier);
 end
 
+lmc_set_handler('MACROS',function(button, direction)
+if (direction == 0) then return end --Activates the press only on the downstroke
+
+lmc.minimizeToTray = true -- Sends LuaMacros to the system tray when you minimize it
+--lmc_minimize()  -- starts lua already minimized you shoud activate this (by removing the -- behind it) after everything is set and working
+
 --this lists each key and transforms it into the key+F13
 
     --esc row
