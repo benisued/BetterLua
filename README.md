@@ -2,7 +2,7 @@
 
 
 
-A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, in this script, lua sends <key>+F13 which you can capture with AutoHotKey and do whatever you want.
+A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, in this script, lua sends KEY+F13 which you can capture with AutoHotKey and do whatever you want.
 
 Using a 2nd keyboard is Taran's idea, but our implementations differs https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROSx
 
@@ -18,10 +18,10 @@ Using a 2nd keyboard is Taran's idea, but our implementations differs https://gi
 Type = keyboard
   Handle = 65607
   Name = MACROS
-  SystemId = \\?\HID#VID_B404&PID_0101&MI_00#8&1733811&0&0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}
+  SystemId = \\?\HID#VID_B404&PID_0101&MI_00#8&**1733811**&0&0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}
 ```
 
-5. Open 2ndKeyb2ndVer.lua, change 0000AAA (in the second line) for your ID (in my case *1733811*)
+5. Open 2ndKeyb2ndVer.lua, change 0000AAA (in the second line) for your ID (in my case 1733811)
 
 After you press play, everything you press on your second keyboard will be interpreted by your system as *(whatever you pressed)+F13]*  (your keyboard most likely doesn't have a physycal F13 key, but it can still interpret it)
 
