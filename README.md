@@ -54,6 +54,8 @@ that's it
 
 ## Troubleshooting
 
+I recently updated the code to include all the key codes so this shouldn't happen anymore 
+
 If there is a key that doesn't work in the second keyboard this is how you fix it:
 1. find the key code here https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
 2. Add this piece of code to 2ndKeyb2ndVer.lua, changing XX for the number of the key (it has to be added under the other similar snippets)
