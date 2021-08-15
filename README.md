@@ -2,7 +2,7 @@
 
 
 
-A better way of having a second keyboard for macros, instead of having each key of the second keyboard open an AHK script, in this script, lua sends KEY+F13 which you can capture with AutoHotKey and do whatever you want.
+A simpler way of having a second keyboard dedicated macros, instead of having each key of the second keyboard open an AHK script, in BetterLua, lua will send KEY+F13 which you can capture with AutoHotKey and do whatever you want. if for example you press E on the second keyboard, AHK will get E+F13 which you can use as a macro as you would regularly.
 
 Using a 2nd keyboard is Taran's idea, but our implementations differs https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROSx
 
